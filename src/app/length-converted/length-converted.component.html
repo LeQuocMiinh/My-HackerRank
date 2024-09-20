@@ -1,0 +1,36 @@
+<div class="container mt-5 mb-5">
+    <button class="back-to-menu btn btn-primary" routerLink="/menu">Back</button>
+    <div class="d-flex align-items-center justify-content-center " style="height: 100vh;">
+        <div [formGroup]="form" class="d-flex align-items-center justify-content-center gap-5">
+            <section class="layout-column align-items-center justify-content-between">
+                <div class="input-group mb-3">
+                    <input type="number" formControlName="input1" (input)="changeNumber('input1',$event)"
+                        class="form-control" aria-describedby="basic-addon1" data-test-id="app-input1">
+                    <span class="input-group-text" data-test-id="app-label1"
+                        id="basic-addon1">{{form.get('selected1')?.value}}</span>
+                </div>
+                <select class="form-select" data-test-id="app-select1" (change)="changeSelected('selected1', $event)"
+                    formControlName="selected1">
+                    <option *ngFor="let item of lengthOptions" [value]="item.unit" [label]="item.label">{{item.label}}
+                    </option>
+                </select>
+            </section>
+
+            <label>⇋</label>
+
+            <section class="layout-column align-items-center justify-content-between">
+                <div class="input-group mb-3">
+                    <input type="number" formControlName="input2" (input)="changeNumber('input2',$event)"
+                        class="form-control" aria-describedby="basic-addon1" data-test-id="app-input2">
+                    <span class="input-group-text" data-test-id="app-label2"
+                        id="basic-addon1">{{form.get('selected2')?.value}}</span>
+                </div>
+                <select class="form-select" data-test-id="app-select2" (change)="changeSelected('selected2', $event)"
+                    formControlName="selected2">
+                    <option *ngFor="let item of lengthOptions" [value]="item.unit" [label]="item.label">{{item.label}}
+                    </option>
+                </select>
+            </section>
+        </div>
+    </div>
+</div>
