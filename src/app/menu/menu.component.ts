@@ -12,5 +12,15 @@ export class MenuComponent {
       name: 'Length Converted',
       router: '/length-converted'
     },
+    {
+      id: 2,
+      name: 'Temperature Converted',
+      router: '/temperature-converted'
+    },
+    {
+      id: 3,
+      name: 'Weather Detail',
+      router: '/weather-detail'
+    },
   ]
 }

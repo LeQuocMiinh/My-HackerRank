@@ -1,10 +1,11 @@
 <div class="container mt-3 mb-3">
     <section class="menu">
-        <h2 class="heading fw-bold text-center">Danh sách HackerRank</h2>
+        <h2 class="heading fw-bold text-center">List of HackerRank</h2>
 
         <ul class="list-group cursor-pointer">
-            <li *ngFor="let item of menu" class="list-group-item list-group-item-action" [routerLink]="item?.router">
-                {{item?.id}}. {{item?.name}}
+            <li *ngFor="let item of menu" class="list-group-item list-group-item-action p-3"
+                [routerLink]="item?.router">
+                <span><b>{{item?.id}}.</b></span> {{item?.name}}
             </li>
         </ul>
     </section>

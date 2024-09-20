@@ -1,4 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    background: #f3f3f3;
+}
+
 .cursor-pointer {
     cursor: pointer;
+}
+
+.layout-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.layout-row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+
+.flex-grow-30 {
+    flex: 1 0 30%;
+}
+
+.flex-grow-70 {
+    flex: 1 0 70%;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #2C3E50;
+    font-size: 18px;
+}
+
+input:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ee0979;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
 }
