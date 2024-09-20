@@ -16,6 +16,8 @@ const routes: Routes = [
     redirectTo: 'menu',
     pathMatch: 'full',
   },
+  { path: 'weather-detail', loadChildren: () => import('./weather-detail/weather-detail.module').then(m => m.WeatherDetailModule) },
+  { path: 'temperature-converted', loadChildren: () => import('./temperature-converted/temperature-converted.module').then(m => m.TemperatureConvertedModule) },
 ];
 
 @NgModule({

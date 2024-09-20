@@ -1,0 +1,17 @@
+<div class="container mt-5 mb-5 layout-columna align-items-center gap-3">
+  <button class="back-to-menu btn btn-primary" routerLink="/menu">Back</button>
+  <h2 class="heading text-center">Temperature Converted</h2>
+  <div class="d-flex flex-column align-items-center mt-50 gap-3">
+    <section class="d-flex align-items-center justify-content-between gap-1 w-100">
+      <label class="text-start flex-grow-30">Celsius (°C): </label>
+      <input [(ngModel)]="celsius" (input)="changeNumber('input1', $event)" type="number" class="large flex-grow-70"
+        data-test-id="celsius-input" />
+    </section>
+
+    <section class="d-flex align-items-center justify-content-between gap-1 w-100">
+      <label class="text-start flex-grow-30">Fahrenheit (°F): </label>
+      <input [(ngModel)]="fahren" (input)="changeNumber('input2', $event)" type="number" class="large flex-grow-70"
+        data-test-id="fahrenheit-input" />
+    </section>
+  </div>
+</div>
