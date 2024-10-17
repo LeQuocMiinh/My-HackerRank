@@ -1,0 +1,14 @@
+<div class="layout-column align-items-center mt-50">
+    <button class="back-to-menu btn btn-primary" routerLink="/">Back</button>
+    <section class="layout-row align-items-center justify-content-center" data-test-id="page-number-buttons">
+        <button *ngFor="let number of getPagesArray;" (click)="goToPage(number)">
+            {{number}}
+        </button>
+    </section>
+
+    <ul class="mt-50 styled" data-test-id="football-competitions">
+        <li *ngFor="let item of competitions;" class="slide-up-fade-in py-10">
+            Competition {{item.name}} won by {{item.winner}} in year {{item.year}}
+        </li>
+    </ul>
+</div>
