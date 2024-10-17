@@ -1,0 +1,22 @@
+<div class="container mt-5 mb-5">
+    <div class="container">
+        <button class="back-to-menu btn btn-primary" routerLink="/">Back</button>
+        <h1 class="heading text-center">
+            <span class="material-symbols-outlined">
+                partly_cloudy_day
+            </span>
+            Survay List
+        </h1>
+        <div class="row">
+            <div class="col-3">
+                <app-filter [filterType]="status" [filterValues]="statuses"
+                    (onFilterSelected)="onFilterSelected($event, 'status')"></app-filter>
+                <app-filter [filterType]="category" [filterValues]="categories"
+                    (onFilterSelected)="onFilterSelected($event, 'category')"></app-filter>
+            </div>
+            <div class="col-9">
+                <app-list [surveyList]="filteredList"></app-list>
+            </div>
+        </div>
+    </div>
+</div>

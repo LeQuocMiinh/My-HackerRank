@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">TITLE</th>
+            <th scope="col">CATEGORY</th>
+            <th scope="col">STATUS</th>
+            <th scope="col">LABEL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let survey of surveyList">
+            <td>{{ survey.title }}</td>
+            <td>{{ survey.category }}</td>
+            <td>{{ survey.status}}</td>
+            <td>{{ survey.label }}</td>
+        </tr>
+    </tbody>
+</table>

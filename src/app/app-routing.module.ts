@@ -8,16 +8,18 @@ const routes: Routes = [
     loadChildren: () => import('./length-converted/length-converted.module').then(m => m.LengthConvertedModule)
   },
   {
-    path: 'menu',
+    path: '',
     loadChildren: () => import('./menu/menu.module').then(m => m.MenuModule)
   },
   {
     path: '',
-    redirectTo: 'menu',
+    redirectTo: '',
     pathMatch: 'full',
   },
   { path: 'weather-detail', loadChildren: () => import('./weather-detail/weather-detail.module').then(m => m.WeatherDetailModule) },
   { path: 'temperature-converted', loadChildren: () => import('./temperature-converted/temperature-converted.module').then(m => m.TemperatureConvertedModule) },
+  { path: 'survay-list', loadChildren: () => import('./survay-list/survay-list.module').then(m => m.SurvayListModule) },
+  { path: 'paginated-football-competitions', loadChildren: () => import('./paginated-football-competitions/paginated-football-competitions.module').then(m => m.PaginatedFootballCompetitionsModule) },
 ];
 
 @NgModule({

@@ -10,17 +10,32 @@ export class MenuComponent {
     {
       id: 1,
       name: 'Length Converted',
-      router: '/length-converted'
+      router: '/length-converted',
+      level: 'Angular (Intermediate)'
     },
     {
       id: 2,
-      name: 'Temperature Converted',
-      router: '/temperature-converted'
+      name: 'Survay List',
+      router: '/survay-list',
+      level: 'Angular (Intermediate)'
     },
     {
       id: 3,
+      name: 'Paginated Football Competitions',
+      router: '/paginated-football-competitions',
+      level: 'Angular (Intermediate)'
+    },
+    {
+      id: 4,
+      name: 'Temperature Converted',
+      router: '/temperature-converted',
+      level: 'Angular (Basic)'
+    },
+    {
+      id: 5,
       name: 'Weather Detail',
-      router: '/weather-detail'
+      router: '/weather-detail',
+      level: 'Angular (Basic)'
     },
   ]
 }
